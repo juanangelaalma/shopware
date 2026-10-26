@@ -499,6 +499,11 @@ While `composer watch:admin` runs, saving the Twig template of a component or of
 Components that extend it update as well.
 The watcher still reloads the page when it cannot apply an edit in place:
 for a Twig override of a component without a Twig template, for a template whose content another template file has as well, or for a component that has not been rendered yet.
+### Product Prices card restructured
+
+Display and purchase prices now have separate sections and inheritance controls; advanced pricing moved to the card header.
+Extensions overriding the price form must [update their blocks and callbacks](./UPGRADE-6.9.md#product-prices-card-extension-points).
+Callers of `sw-list-price-field` must render purchase prices separately; its purchase-price props were deprecated.
 
 ### Experimental: Vite 8 and HTTP/2 for the Administration behind the `ADMIN_VITE_8` feature flag
 
