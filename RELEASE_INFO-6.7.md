@@ -406,6 +406,11 @@ If an app ships both, the file takes precedence, the inline definition is ignore
 
 ## Administration
 
+### Deprecated the `defaultFolderRepository` computed property of `sw-cms-detail` and `sw-cms-list`
+
+The `defaultFolderRepository` computed property of `sw-cms-detail` and `sw-cms-list` is deprecated and will be removed.
+Use `mediaDefaultFolderService.getDefaultFolderId(entityName)` instead.
+
 ### Deprecated the `customFieldSetRepository` computed property of `sw-product-stream-detail`
 
 The `customFieldSetRepository` computed property of `sw-product-stream-detail` is deprecated and will be removed.
